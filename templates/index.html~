@@ -1,0 +1,13 @@
+$def with(todos)
+<ul>
+$for todo in todos:
+	<li stock="t$todo.STOCK" >stock=$todo.STOCK </li>
+	<li data="t$todo.DATE" >date=$todo.DATE </li>
+	<li open="t$todo.OPEN" >open:$todo.OPEN </li>
+	<li close="t$todo.CLOSE" >close:$todo.CLOSE </li>
+	<li high="t$todo.HIGH" >high:$todo.HIGH </li>
+	<li low="t$todo.LOW" >low:$todo.LOW </li>
+	<li value="t$todo.VALUE" >value:$todo.VALUE </li>
+	<li volume="t$todo.VOLUME">volume:$todo.VOLUME  </li>
+	<br/>
+</ul>	
